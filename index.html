@@ -86,7 +86,7 @@
           <div class="content_form" id="muathe_form">
                <div class="form_muathe">
                     <form action="" method="post">
-                         <select name="loai_the_mua">
+                         <select name="loai_the_mua" required>
                               <option value="0">Chọn loại thẻ</option>
                               <optgroup label="Thẻ điện thoại">
                                    <option value="1" type-discount="1">Viettel</option>
@@ -116,6 +116,18 @@
                                    <option value="21">Thẻ Data 3G Mobifone</option>
                               </optgroup>
                          </select>
+
+                         <select name="menh_gia" id="menh_gia" required>
+                              <option value="0">Chọn mệnh giá</option>
+                              <option value="10000">10.000đ</option>
+                              <option value="20000">20.000đ</option>
+                              <option value="50000">50.000đ</option>
+                              <option value="100000">100.000đ</option>
+                              <option value="200000">200.000đ</option>
+                              <option value="500000">500.000đ</option>
+                         </select>
+                         <input type="number" name="so_luong" required/>
+                         <input type="submit" value="Thanh toán">
                     </form>
                </div>
           </div>
